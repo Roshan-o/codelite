@@ -1,6 +1,6 @@
 # Codelite 🚀
 
-Codelite is a modern, high-performance practice platform inspired by LeetCode. It provides a polished environment for users to solve curated algorithmic challenges, write solutions, and run sample test cases against their code. 
+Codelite is a modern, high-performance practice platform. It provides a polished environment for users to solve curated algorithmic challenges, write solutions, and run sample test cases against their code. 
 
 ## 🎯 Our Motto
 **"Practice coding. Ship better solutions."**
@@ -23,7 +23,7 @@ Codelite is built with a robust, modern technology stack designed for scalabilit
 - **React 18** - UI Library for building interactive components
 - **TypeScript** - Strongly typed JavaScript for enhanced developer experience
 - **Vite** - Next-generation frontend tooling for lightning-fast HMR and optimized builds
-- **Vanilla CSS** - Custom, lightweight styling system heavily inspired by LeetCode's design language
+- **Vanilla CSS** - Custom, lightweight styling system with a sleek and modern design language
 
 ### Backend
 - **Go (Golang)** - High-performance backend language for handling fast API requests and execution logic
