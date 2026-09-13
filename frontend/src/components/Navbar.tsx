@@ -9,24 +9,35 @@ export function Navbar({ page, onSelect, onLogout }: NavbarProps) {
     <header className="topbar">
       <div className="brand-wrap">
         <div className="brand-mark">C</div>
-        <div>
-          <p className="brand-name">codelite</p>
-          <small>Practice platform</small>
-        </div>
+        <span className="brand-name">codelite</span>
       </div>
 
       <nav className="nav">
-        <button className={page === 'problems' ? 'active' : ''} onClick={() => onSelect('problems')}>
+        <button
+          className={page === 'problems' ? 'active' : ''}
+          onClick={() => onSelect('problems')}
+        >
           Problems
         </button>
-        <button className={page === 'create' ? 'active' : ''} onClick={() => onSelect('create')}>
-          Create problem
+        <button
+          className={page === 'create' ? 'active' : ''}
+          onClick={() => onSelect('create')}
+        >
+          Create
         </button>
-        <button className={page === 'profile' ? 'active' : ''} onClick={() => onSelect('profile')}>
+        <button
+          className={page === 'profile' ? 'active' : ''}
+          onClick={() => onSelect('profile')}
+        >
           Profile
         </button>
-        <button className="ghost" onClick={onLogout}>Sign out</button>
       </nav>
+
+      <div className="nav-right">
+        <button className="btn-sign-out" onClick={onLogout}>
+          Sign out
+        </button>
+      </div>
     </header>
   )
 }

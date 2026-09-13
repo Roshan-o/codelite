@@ -85,8 +85,14 @@ export default function App() {
       {message && <p className="message banner">{message}</p>}
 
       {page === 'profile' && <ProfilePage user={user} />}
-      {page === 'create' && <CreateProblemPage token={token} onCreated={handleCreated} />}
-      {page === 'solve' && selectedProblemId !== null && <ProblemDetailsPage problemId={selectedProblemId} onBack={() => setPage('problems')} />}
+      {page === 'create' && (
+        <div className="page-content">
+          <CreateProblemPage token={token} onCreated={handleCreated} />
+        </div>
+      )}
+      {page === 'solve' && selectedProblemId !== null && (
+        <ProblemDetailsPage problemId={selectedProblemId} onBack={() => setPage('problems')} />
+      )}
       {page === 'problems' && (
         <ProblemsPage
           problems={filteredProblems}

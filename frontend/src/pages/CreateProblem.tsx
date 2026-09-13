@@ -211,9 +211,9 @@ export function CreateProblemPage({ token, onCreated }: { token: string; onCreat
       </form>
 
       <aside className="card preview-panel">
-        <span className="eyebrow muted">PREVIEW</span>
+        <span className="eyebrow-label">PREVIEW</span>
         <h2>{data.title || 'Untitled problem'}</h2>
-        <p className="preview-difficulty">{data.difficulty}</p>
+        <p className="preview-difficulty"><span className={`pill difficulty-${data.difficulty.toLowerCase()}`}>{data.difficulty}</span></p>
         <div className="preview-block">
           <h4>Problem statement</h4>
           <p>{data.description || 'Your problem description will appear here.'}</p>
